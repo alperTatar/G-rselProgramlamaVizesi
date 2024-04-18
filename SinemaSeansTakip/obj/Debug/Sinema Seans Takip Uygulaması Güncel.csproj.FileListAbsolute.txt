@@ -1,0 +1,19 @@
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\Sinema Seans Takip Uygulaması Güncel.exe.config
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\Sinema Seans Takip Uygulaması Güncel.exe
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\Sinema Seans Takip Uygulaması Güncel.pdb
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema Seans Takip Uygulaması Güncel.csproj.AssemblyReference.cache
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema_Seans_Takip_Uygulaması_Güncel.Form1.resources
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema_Seans_Takip_Uygulaması_Güncel.Properties.Resources.resources
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema Seans Takip Uygulaması Güncel.csproj.GenerateResource.cache
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema Seans Takip Uygulaması Güncel.csproj.CoreCompileInputs.cache
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema Seans Takip Uygulaması Güncel.exe
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema Seans Takip Uygulaması Güncel.pdb
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\EntityFramework.dll
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\System.Data.SQLite.dll
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\EntityFramework.xml
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\bin\Debug\System.Data.SQLite.xml
+C:\Users\TATAR\source\repos\Sinema Seans Takip Uygulaması Güncel\Sinema Seans Takip Uygulaması Güncel\obj\Debug\Sinema S.46B54398.Up2Date
