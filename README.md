@@ -1,5 +1,7 @@
 # GorselProgramlamaVizesi/Ödevi
 
+NOT: KOD İÇERİĞİNDE HER KODUN NE İŞE YARADIĞI TEK TEK ANLATILMIŞTIR. KODLARIN İÇERSİNDE BOL BOL YORUM SATIRLARI VARDIR VE HİÇ BİR DETAY ATLANMAMIŞTIR.
+
 Basit bir tanımla bu program , bir sinema rezervasyon programıdır. Kullanıcı film , seans ve salon seçebilir ve bilet alabilir. Salonlardaki kapasite durumunu kontrol edebilir.
 
 /// DETAYLI ANLATIM ///
