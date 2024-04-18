@@ -144,27 +144,27 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private void VerileriComboBoxaEkle()
         {
-            // Bağlantı dizesini alın
+            // Bağlantı dizesinin alınması
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
 
-            // SQL sorgusunu hazırlayın
+            // SQL sorgusunun hazırlanması
             string query = "SELECT FilmAdi FROM Filmler";
 
-            // Bağlantıyı oluşturun
+            // Bağlantıyı oluşturma
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
-                // Komut ve bağlantıyı oluşturun
+                // Komut ve bağlantıyı oluşturma
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
                     try
                     {
-                        // Bağlantıyı açın
+                        // Bağlantıyı aç
                         connection.Open();
 
-                        // Verileri okuyun
+                        // Verileri oku
                         using (SQLiteDataReader reader = command.ExecuteReader())
                         {
-                            // ComboBox'ı temizleyin
+                            // ComboBox'ı temizle
                             comboBox5.Items.Clear();
 
                             // Her satır için verileri ComboBox'a ekle
@@ -177,7 +177,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
                     }
                     catch (Exception ex)
                     {
-                        // Hata durumunda hata mesajını gösterin
+                        // Hata durumunda hata mesajını göster
                         MessageBox.Show("Veriler alınırken bir hata oluştu: " + ex.Message);
                     }
                 }
@@ -189,7 +189,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private void button4_Click(object sender, EventArgs e)
         {
-            // Film adı, seans saati ve salon numarasını alın
+            // Film adı, seans saati ve salon numarasını al
             string filmAdi = textBox2.Text;
             string seansSaati = textBox3.Text;
             string salonNo = textBox4.Text;
@@ -197,13 +197,13 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
             // SQL komutunu hazırlayın (parametreler kullanarak SQL enjeksiyonunu önlemek için)
             string query = "INSERT INTO Filmler (FilmAdi, SeansSaati, SalonNo) VALUES (@FilmAdi, @SeansSaati, @SalonNo)";
 
-            // Bağlantı dizesini alın
+            // Bağlantı dizesini al
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
 
-            // Bağlantıyı oluşturun
+            // Bağlantıyı oluştur
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
-                // Komut ve bağlantıyı oluşturun
+                // Komut ve bağlantıyı oluştur
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
                     // Parametreleri ekle
@@ -213,12 +213,12 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
                     try
                     {
-                        // Bağlantıyı açın
+                        // Bağlantıyı aç
                         connection.Open();
-                        // Komutu çalıştırın
+                        // Komutu çalıştır
                         int rowsAffected = command.ExecuteNonQuery();
 
-                        // Eğer satır etkilendiyse, bilgi mesajı gösterin
+                        // Eğer satır etkilendiyse, bilgi mesajı göster
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Film başarıyla eklendi.");
@@ -230,7 +230,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
                     }
                     catch (Exception ex)
                     {
-                        // Hata durumunda hata mesajını gösterin
+                        // Hata durumunda hata mesajını göster
                         MessageBox.Show("Film eklenirken bir hata oluştu: " + ex.Message);
                     }
                 }
@@ -242,19 +242,19 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Bağlantı dizesini alın
+            // Bağlantı dizesini al
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
 
-            // Salon numarasını alın
+            // Salon numarasını al
             string salonNo = comboBox4.Text;
 
             // SQL komutunu hazırlayın (parametreler kullanarak SQL enjeksiyonunu önlemek için)
             string query = "SELECT SalonKapasitesi FROM salonKapasitesi WHERE SalonNo = @SalonNo";
 
-            // Bağlantıyı oluşturun
+            // Bağlantıyı oluştur
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
-                // Komut ve bağlantıyı oluşturun
+                // Komut ve bağlantıyı oluştur
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
                     // Parametreyi ekle
@@ -262,10 +262,10 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
                     try
                     {
-                        // Bağlantıyı açın
+                        // Bağlantıyı aç
                         connection.Open();
 
-                        // Veriyi okuyun
+                        // Veriyi oku
                         object result = command.ExecuteScalar();
 
                         // Eğer veri varsa, mevcut kapasiteyi göster
@@ -282,7 +282,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
                     }
                     catch (Exception ex)
                     {
-                        // Hata durumunda hata mesajını gösterin
+                        // Hata durumunda hata mesajını göster
                         MessageBox.Show("Salon kapasitesi alınırken bir hata oluştu: " + ex.Message);
                     }
                 }
@@ -332,34 +332,34 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private void label8_Click(object sender, EventArgs e)
         {
-
+        //daha sonraki aşamalarda programı güncellemek ve daha işlevsel bir hale getirmek amacı ile bu kısmı da modül olarak ekledim. Program üzerinde güncelleme yapacağım.
         }
 
         private void tabPage3_Click(object sender, EventArgs e)
         {
-
+         //daha sonraki aşamalarda programı güncellemek ve daha işlevsel bir hale getirmek amacı ile bu kısmı da modül olarak ekledim. Program üzerinde güncelleme yapacağım
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-
+        //daha sonraki aşamalarda programı güncellemek ve daha işlevsel bir hale getirmek amacı ile bu kısmı da modül olarak ekledim. Program üzerinde güncelleme yapacağım
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Seçilen film adını alın
+            // Seçilen film adını al
             string selectedFilm = comboBox1.SelectedItem.ToString();
 
-            // Bağlantı dizesini alın
+            // Bağlantı dizesini al
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
 
             // SQL sorgusunu hazırlayın (parametreler kullanarak SQL enjeksiyonunu önlemek için)
             string query = "SELECT DISTINCT SalonNo FROM Filmler WHERE FilmAdi = @FilmAdi";
 
-            // Bağlantıyı oluşturun
+            // Bağlantıyı oluştur
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
-                // Komut ve bağlantıyı oluşturun
+                // Komut ve bağlantıyı oluştur
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
                     // Parametreyi ekle
@@ -367,16 +367,16 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
                     try
                     {
-                        // Bağlantıyı açın
+                        // Bağlantıyı aç
                         connection.Open();
 
-                        // Veriyi okuyun
+                        // Veriyi oku
                         using (SQLiteDataReader reader = command.ExecuteReader())
                         {
-                            // ComboBox4'ü temizleyin
+                            // ComboBox4'ü temizle
                             comboBox4.Items.Clear();
 
-                            // Veri varsa, salon numaralarını comboBox4'e ekleyin
+                            // Veri varsa, salon numaralarını comboBox4'e ekle
                             while (reader.Read())
                             {
                                 comboBox4.Items.Add(reader["SalonNo"].ToString());
@@ -385,7 +385,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
                     }
                     catch (Exception ex)
                     {
-                        // Hata durumunda hata mesajını gösterin
+                        // Hata durumunda hata mesajını göster
                         MessageBox.Show("Salonlar alınırken bir hata oluştu: " + ex.Message);
                     }
                 }
@@ -394,15 +394,15 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Seçilen film, salon ve saat bilgilerini alın
+            // Seçilen film, salon ve saat bilgilerini al
             string filmAdi = comboBox1.SelectedItem.ToString();
             string salonNo = comboBox4.SelectedItem.ToString();
             string seansSaati = comboBox2.SelectedItem.ToString();
 
-            // Mevcut salon kapasitesini kontrol edin
+            // Mevcut salon kapasitesini kontrol et
             int mevcutKapasite = GetMevcutKapasite(salonNo);
 
-            // Mevcut kapasite 0'dan büyükse yer ayırma işlemi yapın
+            // Mevcut kapasite 0'dan büyükse yer ayırma işlemi yap
             if (mevcutKapasite > 0)
             {
                 // Bilet satışı başarılı, mevcut kapasiteyi güncelle
@@ -412,7 +412,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
             }
             else
             {
-                // Mevcut kapasite 0'a ulaştı, bilet satışını iptal edin
+                // Mevcut kapasite 0'a ulaştı, bilet satışını iptal et
                 MessageBox.Show("Bu salonda bu film için yer kalmamıştır, lütfen diğer seanslara bakınız.");
             }
         }
@@ -420,7 +420,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private int GetMevcutKapasite(string salonNo)
         {
-            // Bağlantı dizesini alın
+            // Bağlantı dizesini al
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
 
             // Mevcut kapasiteyi saklayacak değişken
@@ -429,10 +429,10 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
             // SQL sorgusunu hazırlayın (parametreler kullanarak SQL enjeksiyonunu önlemek için)
             string query = "SELECT MevcutKapasite FROM salonKapasitesi WHERE SalonNo = @SalonNo";
 
-            // Bağlantıyı oluşturun
+            // Bağlantıyı oluştur
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
-                // Komut ve bağlantıyı oluşturun
+                // Komut ve bağlantıyı oluştur
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
                     // Parametreyi ekle
@@ -466,7 +466,7 @@ namespace Sinema_Seans_Takip_Uygulaması_Güncel
 
         private void UpdateMevcutKapasite(string salonNo, int yeniKapasite)
         {
-            // Bağlantı dizesini alın
+            // Bağlantı dizesini al
             string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
 
             // SQL sorgusunu hazırlayın (parametreler kullanarak SQL enjeksiyonunu önlemek için)
